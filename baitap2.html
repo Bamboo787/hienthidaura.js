@@ -7,11 +7,12 @@
     <title>Document</title>
 </head>
 <body>
-    <button type="button" onclick="showMessage();">Click Me!</button>
-<script>
- function showMessage(){
-     alert('Xin chào!');
- }
-</script>
+    <div id="messageDiv"></div>
+    <button type="button" onclick="shownMessage()" id="message">Click me!</button>
+    <script>
+        function shownMessage() {
+            document.getElementById('message').innerHTML = 'Xin chao';
+        }
+    </script>
 </body>
 </html>
